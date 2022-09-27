@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Html</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <figure>
+                    <img src="images/pexels-pixabay-65894.jpg" alt="peacock" width="100 " height="100">
+                </figure>
+                <ul type="none">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main">
+        <div id="center">
+            <img src="images/pexels-pixabay-65894.jpg" alt="flower" class="img_main">
+            <h3 class="text">Welcome home</h3>
+
+        </div>
+    <div class="section">
+        <aside>
+            <div class="tugContainer"><span>Toggle</span></div>
+        </aside>
+        <figure class="section_img">
+            <img src="images/floatingbaloon.jpg" alt="" width="200">
+            <img src="images/man.jpg" alt="" width="2">
+        </figure>
+    </div>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        #container{
+            background: radial-gradient(orange 70%, purple 30%);
+            color: aliceblue;
+            height: 100vh;
+            position:relative;
+        }
+        header{
+            /*border: .2em ridge grey;*/
+        }
+        nav{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        ul{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+        }
+        li a{
+            color: aliceblue;
+        }
+        /*main{
+            position: relative;
+        }*/
+        .section{
+            border:.2em solid blue;
+            width:30vw;
+            position: absolute;
+            top:10vh;
+            left: auto;
+            right: 0;
+            padding: 2em;
+            height:90vh;
+        }
+        aside{
+            border: .2em ridge black;
+            margin-bottom: 2em;
+        }
+        .text{
+            color:white;
+            position: absolute;
+            left:40%;
+            bottom:10%;
+            mix-blend-mode: overlay;
+        }
+        .img_main{
+            width:20vw;
+            box-shadow:.2em .2em .2em .2em red;
+            mix-blend-mode: overlay;
+        }
+        .section_img{
+            border:.2em solid green;
+            display: grid;
+            justify-content: center;
+        }
+        .section_img img{
+            height: 30vh;
+        }
+        #center{
+            /*border: .2em ridge red;*/
+            width:70vw;
+            display: grid;
+            justify-content: center;
+            padding:2em;
+            position: relative;
+        }
+        .tugContainer{
+            background-color: white;
+        }
+        span{
+            color: black;
+            background-color: red;
+        }
+     
+    </style>
+</body>
+</html>

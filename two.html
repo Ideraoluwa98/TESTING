@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="idera">
+    <meta name="description" content="this page contains all the things i am learning how to create as i learn HTML.">
+    <title>My first web page</title>
+    <link rel="icon" href="images/icons8-globe-africa-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">  
+</head> 
+
+<body>
+    <header>
+        <h1>Goals for the year</h1>
+
+
+    <nav aria-label="primary-naviagtion">
+        
+        <ul>
+            <li>
+                <a href="#html">learn HTML</a>
+            </li>
+            <li>
+                <a href="#vacation">planning a vacation</a>
+            </li>
+            <li>
+                <a href="#vacation">contact me</a>
+            </li>
+        
+        </ul>
+    </nav>
+    </header>
+
+    <hr>
+    <main>
+         <article id="html">
+            <h2>i'm ready to learn HTML</h2>
+            <p>this is my first web page</p>
+            <section>
+                <h3>HTML5</h3>
+            <img src="/images/boy.jpg" alt="Boy picture" title="i am learning HTML5" width="100" height="100">
+        </section>
+        <section>
+        <h3>My daily schedule</h3>
+        
+    <p>Let me tell you how I.....</p>
+        <ol>
+        <li>.....i learn more about web dev.</li>
+        <li>....i plan out my schedule</li>
+        <li>...i use resources from <abbr title="mozilla developer network">
+            <a href="https://developer.mozilla.org/"> MDN</a>
+        </abbr></li>
+        </ol>
+            <aside>
+                <details>
+                    <summary>guess the <mark>number of hours </mark>i code per day?</summary>
+                    <p>i start at<time datetime="08:00"> 8 am </time>and i write code for<time datetime="PT3H"> 3 hours </time>every morning</p>
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>MY DAILY SCHEDULE</caption>
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <th scope="row">morning</th>
+                    <td>
+                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                        <td>write code</td>
+                </tr>
+                <tr>
+                    <th scope="row">break</th>
+                    <td>
+                        <time datetime="11:00">11am</time>-<time datetime="12:00">12am</time>
+                        <td>eat lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">afternoon</th>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                        <td>study for sch</td>
+                </tr>
+                <tr>
+                   <th>evening</th>
+                    <td rowspan="2">All other times</td>
+                    <td>free time</td>
+                </tr>
+                <tr>
+                    <th scope="row">night</th>
+                    <td>sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">and thats what i do everyday, 5 days a week. eat sleep and recharge</td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+    </article>
+    </main>
+
+    <hr>
+
+    
+
+        <article id="vacation">
+    <h2>i'm also planning a vacation</h2>
+    <p>i've  been working hard and <em>really need a getway</em></p>
+    <p>i live in lagos so i want to visit a beach</p>
+
+    <h3>places i'd like to visit</h3>
+    <ul>
+        <li>
+            <p>i've heard good things about the <strong>caribean.</strong> </p>
+            <figure>
+                <img src="images/floatingbaloon.jpg" alt="floating ballon" title="i want to float" width="150" height="150" loading="lazy">
+                <figcaption>
+                    boy floating
+                </figcaption>
+            </figure>
+</li>
+    </ul>
+
+<address>
+no 2 oweh street <br>
+yaba,lagos state.<br>
+nigeria.
+</address>
+<figure>
+<img src="images/man.jpg" alt="man" title="it's 5 0'clock somewhere!" loading="lazy" width="509" height="339">
+<figcaption>
+    a man in glasses
+</figcaption>
+</figure>
+
+
+<!--TODO:add more places-->
+<dl>
+<dt>nigeria</dt>
+<dd>i hear this is <strong>A NICE PLACE</strong></dd>
+
+<dt>south pole</dt>
+<dd>This is also cold</dd>
+</dl>
+</article>
+
+<hr>
+<article id="contact">
+    <h2>contact me</h2>
+    <p>i'd really like to hear from you</p>
+
+    <form action="https://httpbin.org.get" method="get">
+    <p>
+        <label for="firstName">first name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="jane" autocomplete="on" required autofocus>
+    </p>
+    <p>
+        <label for="lastName">last name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="jane" autocomplete="on" required>
+    </p>
+    <p>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="yoursecret" required>
+    </p>
+    <p>
+        <label for="phone">last phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="555-555-555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+    </p>
+    <p>
+        <label for="decade">favorite decade</label>
+        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+    </p>
+     <p>
+        <label for="coffee">favorite coffee</label>
+        <select name="coffee" id="coffee" multiple size="5">
+            <optgroup label="Coffees">
+            <option value="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">iced coffee</option>
+            </optgroup>
+
+            <optgroup>
+            <optgroup label="Espresso drinks">
+            <option value="lattee">latte</option>
+            <option value="cappuccino">cappuccino</option>
+            <option value="cortado">cortado</option>
+            <option value="americano">Americano</option>
+        </optgroup>
+            <option value="other">other</option>
+        </select>
+        </p>
+    </form>
+    </article>
+   
+
+   
+    <hr>
+    <footer>
+        <p>
+    &lt; &lt; &lt; &copy;<a href="about.html">idera elegbede </a>&gt;&gt;&gt;
+    </p>
+    <p> 
+        <a href="#">back to top</a>
+    </p>
+
+    </footer>
+</body>
+</html>
